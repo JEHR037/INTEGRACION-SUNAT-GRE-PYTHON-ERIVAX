@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estado de Guías - Javier Hernande</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/dashboard">
+            <img src="/static/house.svg" alt="dashboard" style="height: 30px; width: 30px;"/>
+        </a>
+    </div>
+    <div class="login-container2">
+        <h2>Estado de las Guías</h2>
+        <div class="lista-registros">
+            {% for registro in registros %}
+            <div class="registro">
+                <span class="nombre-archivo">{{ registro.xml_filename }}</span>
+                <button class="btn-estado" onclick="solicitarEstado('{{ registro.ticket }}', this)">Solicitar Estado</button>
+                <span class="estado-mensaje" id="estado-{{ registro.ticket }}"></span>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="paginacion">
+            {% for page_num in range(1, total_pages + 1) %}
+                <a href="?pagina={{ page_num }}">{{ page_num }}</a>
+            {% endfor %}
+        </div>
+        <footer >
+            <p>Copyright Javier Hernande 2023 - Hecho por Erivax</p>
+            <a href="https://es.linkedin.com/in/javier-hernandezjh" target="_blank">
+                <img src="/static/61109.png" alt="LinkedIn" style="height: 24px; width: 24px;"/>
+            </a>
+        </footer>
+    <script src="/static/min.js"></script>
+</body>
+</html>

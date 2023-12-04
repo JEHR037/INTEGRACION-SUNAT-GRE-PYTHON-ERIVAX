@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generar XML - Javier Hernande</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/dashboard">
+            <img src="/static/house.svg" alt="dashboard" style="height: 30px; width: 30px;"/>
+        </a>
+    </div>
+    <div class="login-container2">
+        <form method="post">
+            <div class="form-field input">
+                ID de Guía: <input type="text" name="numero_guia" value="T001-{{ next_num_cpe }}" required>
+            </div>
+            <div class="form-field input">
+                Factura Enlazada: <input type="text" name="factura_enlazada" placeholder="FFFI-00000055" required>
+            </div>
+            <div class="form-field input">
+                Fecha de Emisión: <input type="date" name="fecha_emision" required>
+            </div>
+            <div class="form-field input">
+                Fecha de Partida: <input type="date" name="fecha_partida" required>
+            </div>
+            <div class="form-field input">
+                RUC del Cliente: <input type="number" name="documento_identificacion" placeholder="10421674383"  required>
+            </div>
+            <div class="form-field input">
+                Nombre del Cliente: <input type="text" name="nombre_cliente" placeholder="BORJAS RELAYSA JOSE FERNANDO" required>
+            </div>
+            <div class="form-field input">
+                Documento de identificación del chofer: <input type="number" name="DNI_chofer" placeholder="07642186" required>
+            </div>
+            <div class="form-field input">
+                Brevet chofer: <input type="text" name="licencia" placeholder="Q07642186"   required>
+            </div>
+            <div class="form-field input">
+                Dirección: <input type="text" name="direccion" placeholder="JR. JUANJUI 642 El Agustíno Lima Lima" required>
+            </div>
+            <div class="form-field input">
+                Placa del Vehículo: <input type="text" name="placa_vehiculo" placeholder="AAN703" required>
+            </div>
+            <div class="form-field input">
+                Descripción de la Carga: <input type="text" name="descripcion_carga" required>
+            </div>
+            <div class="form-field input">
+                Codigo de producto sunat: <input type="number" name="codigo_sunat" placeholder="31261501" required>
+            </div>
+            <div class="form-field input">
+                Peso en Kilos: <input type="number" name="peso_kilos" placeholder="12" required>
+            </div>
+            <button type="submit">Generar XML</button>
+        </form>
+    </div>
+    <footer class="footer-generar" >
+        <p>Copyright Javier Hernande 2023 - Hecho por Erivax</p>
+        <a href="https://es.linkedin.com/in/javier-hernandezjh" target="_blank">
+            <img src="/static/61109.png" alt="LinkedIn" style="height: 24px; width: 24px;"/>
+        </a>
+    </footer>
+</body>
+</html>
+

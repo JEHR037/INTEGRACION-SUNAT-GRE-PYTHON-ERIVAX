@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enviar a SUNAT - Javier Hernande</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/dashboard">
+            <img src="/static/house.svg" alt="dashboard" style="height: 30px; width: 30px;"/>
+        </a>
+    </div>
+    <div class="login-container">
+        <form method="POST" action="/enviar" enctype="multipart/form-data">
+            <div class="form-field">
+                <label for="xml_file">Seleccionar Archivo XML:</label>
+                <input type="file" id="xml_file" name="xml_file" accept=".xml"/>
+            </div>
+            <button type="submit">Enviar a SUNAT</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <p>Copyright Javier Hernande 2023 - Hecho por Erivax</p>
+        <a href="https://es.linkedin.com/in/javier-hernandezjh" target="_blank">
+            <img src="/static/61109.png" alt="LinkedIn" style="height: 24px; width: 24px;"/>
+        </a>
+    </footer>
+</body>
+</html>

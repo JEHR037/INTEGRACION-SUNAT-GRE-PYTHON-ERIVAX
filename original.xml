@@ -1,0 +1,119 @@
+<DespatchAdvice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2">
+                <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+                <cbc:CustomizationID>2.0</cbc:CustomizationID>
+                <cbc:ID>T001-00000002</cbc:ID>
+                <cbc:IssueDate>2023-12-03</cbc:IssueDate>
+                <cbc:IssueTime>00:00:00</cbc:IssueTime>
+                <cbc:DespatchAdviceTypeCode listAgencyName="PE:SUNAT" listName="Tipo de Documento" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">09</cbc:DespatchAdviceTypeCode>
+                <cbc:Note>Guía</cbc:Note>
+                <cac:AdditionalDocumentReference>
+                    <cbc:ID>FFFI-00000002</cbc:ID>
+                    <cbc:DocumentTypeCode listAgencyName="PE:SUNAT" listName="Documento relacionado al transporte" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo61">01</cbc:DocumentTypeCode>
+                    <cbc:DocumentType>Factura</cbc:DocumentType>
+                    <cac:IssuerParty>
+                        <cac:PartyIdentification>
+                            <cbc:ID schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06" schemeID="6">###CAMBIAR A GUSTO####</cbc:ID>
+                        </cac:PartyIdentification>             
+                    </cac:IssuerParty>
+                </cac:AdditionalDocumentReference>
+                <cac:DespatchSupplierParty>
+                    <cac:Party>
+                        <cac:PartyIdentification>
+                            <cbc:ID schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06" schemeID="6">###CAMBIAR A GUSTO####</cbc:ID>
+                        </cac:PartyIdentification>
+                        <cac:PartyLegalEntity>
+                            <cbc:RegistrationName>###CAMBIAR A GUSTO####</cbc:RegistrationName>
+                        </cac:PartyLegalEntity>
+                    </cac:Party>
+                </cac:DespatchSupplierParty>
+                <cac:DeliveryCustomerParty>
+                    <cac:Party>
+                        <cac:PartyIdentification>
+                            <cbc:ID schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06" schemeID="6">###CAMBIAR A GUSTO####</cbc:ID>
+                        </cac:PartyIdentification>
+                        <cac:PartyLegalEntity>
+                            <cbc:RegistrationName>###CAMBIAR A GUSTO####</cbc:RegistrationName>
+                        </cac:PartyLegalEntity>
+                    </cac:Party>
+                </cac:DeliveryCustomerParty>
+                <cac:Shipment>
+                    <cbc:ID>SUNAT_Envio</cbc:ID>
+                    <cbc:HandlingCode listAgencyName="PE:SUNAT" listName="Motivo de traslado" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo20">01</cbc:HandlingCode>
+                    <cbc:HandlingInstructions>Sale</cbc:HandlingInstructions>
+                    <cbc:GrossWeightMeasure unitCode="KGM">2</cbc:GrossWeightMeasure>
+                    <cac:ShipmentStage>
+                        <cbc:TransportModeCode listName="Modalidad de traslado" listAgencyName="PE:SUNAT" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo18">02</cbc:TransportModeCode>
+                        <cac:TransitPeriod>
+                            <cbc:StartDate>2023-12-03</cbc:StartDate>
+                        </cac:TransitPeriod>
+                        <cac:CarrierParty>
+                           <cac:PartyLegalEntity>
+                               <cbc:CompanyID>1570355CNG</cbc:CompanyID>
+                           </cac:PartyLegalEntity>
+                               <cac:AgentParty>
+                                    <cac:PartyLegalEntity>
+                                        <cbc:CompanyID schemeName="Entidad Autorizadora" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogoD37" schemeID="06">1570355CNG</cbc:CompanyID>
+                                    </cac:PartyLegalEntity>
+                               </cac:AgentParty>
+                        </cac:CarrierParty>
+                        <cac:DriverPerson>
+                            <cbc:ID schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06" schemeID="1">###CAMBIAR A GUSTO####</cbc:ID>
+                            <cbc:FirstName>###CAMBIAR A GUSTO####</cbc:FirstName>
+                            <cbc:FamilyName>###CAMBIAR A GUSTO####</cbc:FamilyName>
+                            <cbc:JobTitle>Principal</cbc:JobTitle>
+                            <cac:IdentityDocumentReference>
+                                <cbc:ID>###CAMBIAR A GUSTO####</cbc:ID>
+                            </cac:IdentityDocumentReference>
+                        </cac:DriverPerson>
+                    </cac:ShipmentStage>
+                    <cac:Delivery>
+                        <cac:DeliveryAddress>
+                            <cbc:ID schemeName="Ubigeos" schemeAgencyName="PE:INEI">150111</cbc:ID>
+                            
+                                <cbc:AddressTypeCode listAgencyName="PE:SUNAT" listName="Establecimientos anexos" listID="###CAMBIAR A GUSTO####">0</cbc:AddressTypeCode>
+                            <cac:AddressLine>
+                                <cbc:Line>###CAMBIAR A GUSTO####</cbc:Line>
+                            </cac:AddressLine>
+                        </cac:DeliveryAddress>
+                        <cac:Despatch>
+                            <cac:DespatchAddress>
+                                <cbc:ID schemeName="Ubigeos" schemeAgencyName="PE:INEI">150105</cbc:ID>
+                                <cbc:AddressTypeCode listAgencyName="PE:SUNAT" listName="Establecimientos anexos" listID="###CAMBIAR A GUSTO####">0</cbc:AddressTypeCode>
+                                <cac:AddressLine>
+                                    <cbc:Line>###CAMBIAR A GUSTO####</cbc:Line>
+                                </cac:AddressLine>
+                            </cac:DespatchAddress>
+                        </cac:Despatch>
+                    </cac:Delivery>
+                    <cac:TransportHandlingUnit>
+                        <cac:TransportEquipment>
+                            <cbc:ID>AAN703</cbc:ID>
+                            <cac:ShipmentDocumentReference>
+                                <cbc:ID schemeName="Entidad Autorizadora" schemeAgencyName="PE:SUNAT" schemeID="06">1570355CNG</cbc:ID>
+                            </cac:ShipmentDocumentReference>
+                        </cac:TransportEquipment>
+                    </cac:TransportHandlingUnit>
+                </cac:Shipment>
+                
+                    <cac:DespatchLine>
+                        <cbc:ID>1</cbc:ID>
+                        <cbc:DeliveredQuantity unitCodeListID="UN/ECE rec 20" unitCodeListAgencyName="United Nations Economic Commission for Europe" unitCode="NIU">5.0000000000</cbc:DeliveredQuantity>
+                        <cac:OrderLineReference>
+                            <cbc:LineID>1</cbc:LineID>
+                        </cac:OrderLineReference>
+                        <cac:Item>
+                            <cbc:Description>Pisos de jebe 3 piezas</cbc:Description>
+                            <cac:SellersItemIdentification>
+                                <cbc:ID>3033-3</cbc:ID>
+                            </cac:SellersItemIdentification>
+                            <cac:CommodityClassification>
+                                <cbc:ItemClassificationCode listID="UNSPSC" listAgencyName="GS1 US" listName="Item Classification">31261501</cbc:ItemClassificationCode>
+                            </cac:CommodityClassification>
+                            <cac:AdditionalItemProperty>
+                                <cbc:Name>Indicador de bien regulado por SUNAT</cbc:Name>
+                                <cbc:NameCode listAgencyName="PE:SUNAT" listName="Propiedad del item" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo55">3033-3</cbc:NameCode>
+                                <cbc:Value>0</cbc:Value>
+                            </cac:AdditionalItemProperty>
+                        </cac:Item>
+                    </cac:DespatchLine>
+            </DespatchAdvice>

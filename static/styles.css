@@ -1,0 +1,168 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+ 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0F3B74;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    min-height: 100%;
+    margin-bottom: -50px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content::after {
+    content: "";
+    height: 50px; 
+}
+
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.login-container2 {
+    background: white;
+    padding: 3%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.login-container img {
+    width: 200px;
+    margin-bottom: 20px;
+    flex: 1 0 auto;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input[type="text"],
+.form-field input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0056b3; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003d82; 
+}
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1; 
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    line-height: 40px;
+}
+.footer-generar {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1; 
+    position: relative;
+    bottom: 0; 
+    left: 0; 
+    width: 100%;
+    line-height: 40px;
+}
+footer p {
+    display: inline; 
+    margin: 0;
+    padding: 0;
+    vertical-align: middle; 
+}
+
+footer a {
+    display: inline; 
+    margin-left: 10px; 
+}
+
+footer img {
+    vertical-align: middle;
+    height: 24px;
+    width: 24px;
+}
+
+
+.lista-registros .registro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nombre-archivo {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.btn-estado {
+    margin-right: 15px;
+}
+
+.estado-mensaje {
+    min-width: 150px;
+    text-align: left;
+}
+
+.paginacion {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 6px;
+    background-color: #f1f1f1; 
+    height: 4%; 
+    width: 2.5%; 
+    text-align: right;
+}
+
+.navbar a {
+    margin-right: 10px;
+}
+
+.navbar img {
+    vertical-align: middle;
+}
