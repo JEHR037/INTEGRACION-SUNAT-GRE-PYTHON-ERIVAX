@@ -1,78 +1,77 @@
-#####################
-# Sistema de Integración con SUNAT
-#####################
+# SUNAT Integration System
 
-Este proyecto es un sistema de integración con la API de SUNAT para la generación y envío de archivos XML relacionados con guías de remisión electrónicas. El sistema permite la autenticación de usuarios, la generación de archivos XML conforme a los estándares de SUNAT, el envío de estos archivos y la gestión de respuestas, incluyendo la recepción y manejo de archivos CDR.
+Integration with the SUNAT API for generating and submitting the XML documents behind
+Peruvian electronic shipping guides (guias de remision electronicas). The system signs users
+in, builds XML that conforms to the SUNAT schemas, submits it, and handles the response,
+including receiving and unpacking the CDR acknowledgement.
 
-#####################
-# Características
-#####################
+## Features
 
-- Generación de archivos XML de acuerdo a los estándares de SUNAT.
-- Envío de archivos XML a SUNAT y manejo de respuestas (incluyendo CDR).
-- Autenticación y manejo de sesiones de usuario.
-- Interfaz de usuario basada en tecnologías web para facilitar la generación y envío de archivos.
-- Actualización automática de tokens de autenticación para mantener la sesión activa con SUNAT.
-- Registros de actividad y bitácora de envíos para seguimiento de operaciones.
+- XML generation conforming to the SUNAT schemas.
+- Submission to SUNAT and response handling, CDR included.
+- User authentication and session management.
+- Web interface for building and submitting documents.
+- Automatic refresh of authentication tokens so the SUNAT session stays alive.
+- Activity log and submission history for tracing operations.
 
-#####################
-# Tecnologías Utilizadas
-#####################
+## Stack
 
-- Flask (Framework de Python para desarrollo web).
-- Python para lógica de backend y scripts de automatización.
-- HTML/CSS/JavaScript para el frontend.
-- Requests para solicitudes HTTP a la API de SUNAT.
-- LXML y ElementTree para la manipulación de archivos XML.
-- Base64 y Hashlib para codificación y seguridad.
-- JSON para el manejo de datos y configuraciones.
-- Waitress y pyInstaller para el despliegue y distribución.
+| Concern        | Technology                              |
+| -------------- | --------------------------------------- |
+| Web framework  | Flask                                   |
+| Backend        | Python                                  |
+| Frontend       | HTML, CSS, JavaScript                   |
+| HTTP           | Requests                                |
+| XML            | lxml, ElementTree                       |
+| Encoding       | base64, hashlib                         |
+| Configuration  | JSON                                    |
+| Distribution   | Waitress, PyInstaller                   |
 
-#####################
-# Instalación y Configuración
-#####################
+## Install
 
-Instrucciones para la instalación:
-1. Clona el repositorio del proyecto.
-2. Instala las dependencias con `pip install -r requirements.txt`.
-3. Configura las variables de entorno necesarias (por ejemplo, credenciales de acceso a la API de SUNAT).
-4. Ejecuta `python app.py` para iniciar el servidor Flask.
-5. Ejecuta `python pyinstaller` para buildear.
+```sh
+git clone https://github.com/JEHR037/INTEGRACION-SUNAT-GRE-PYTHON-ERIVAX.git
+cd INTEGRACION-SUNAT-GRE-PYTHON-ERIVAX
+pip install -r requirements.txt
+```
 
-#####################
-# Uso
-#####################
+Set the required environment variables, including the SUNAT API credentials, then start the
+server:
 
-Para utilizar el sistema:
-1. Inicia sesión con tus credenciales de usuario.
-2. Navega a la sección de generación de XML y completa los campos requeridos para crear un archivo XML.
-3. Envía el archivo XML a SUNAT a través de la interfaz del sistema.
-4. Verifica el estado de tu envío y revisa el archivo CDR recibido en respuesta en los zip.
+```sh
+python app.py
+```
 
-#####################
-# Estructura de Archivos
-#####################
+To produce a distributable build:
 
-- `app.py`: Punto de entrada del servidor Flask y rutas del sistema.
-- `acceso.py`: Script para la gestión y actualización de tokens de autenticación.
-- `templates/`: Directorio que contiene archivos HTML para la interfaz de usuario.
-- `static/`: Archivos estáticos como CSS, JavaScript e imágenes.
+```sh
+pyinstaller app.py
+```
 
-#####################
-# Contribuir
-#####################
+## Usage
 
-Si estás interesado en contribuir al proyecto, por favor envía un pull request o abre un issue en el repositorio para discutir los cambios o mejoras que propones.
+1. Sign in with your user credentials.
+2. Open the XML generation view and fill in the fields for the document.
+3. Submit the XML to SUNAT from the interface.
+4. Check the submission status and read the CDR returned inside the response zip.
 
-#####################
-# Licencia
-#####################
+## Layout
 
-Este proyecto está licenciado bajo la Licencia MIT.
+| Path         | Responsibility                                          |
+| ------------ | ------------------------------------------------------- |
+| `app.py`     | Flask entry point and routes                            |
+| `acceso.py`  | Authentication token management and refresh             |
+| `templates/` | HTML templates for the interface                        |
+| `static/`    | CSS, JavaScript and images                              |
 
-#####################
-# Contacto/Autor
-#####################
+## Contributing
 
-- Autor: Erivax 
-- Contacto: [LinkedIn de Erivax](https://es.linkedin.com/in/javier-hernandezjh)
+Open an issue to discuss a change, or send a pull request.
+
+## License
+
+MIT.
+
+## Author
+
+Javier Hernandez — [LinkedIn](https://www.linkedin.com/in/javier-hernandezjh/)
